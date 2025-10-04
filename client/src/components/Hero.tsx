@@ -24,8 +24,12 @@ export default function Hero() {
           TraWell
         </h1>
         
-        <p className="text-2xl md:text-3xl text-white/95 mb-4 font-light">
-          Your AI Travel Companion
+        <p className="text-2xl md:text-3xl text-white/95 mb-2 font-light">
+          Travel Well
+        </p>
+        
+        <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
+          with context-aware AI companion
         </p>
         
         <div className="flex items-center justify-center gap-2 text-white/90 mb-12">
