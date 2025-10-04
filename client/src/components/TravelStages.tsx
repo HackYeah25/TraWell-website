@@ -24,7 +24,7 @@ const stages = [
 
 export default function TravelStages() {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6 bg-gradient-to-b from-white to-accent/10">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-display text-5xl md:text-6xl text-center text-card-foreground mb-20">
           How Trawell Helps
