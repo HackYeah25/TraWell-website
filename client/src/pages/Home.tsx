@@ -1,8 +1,9 @@
 import Hero from "@/components/Hero";
 import TravelStages from "@/components/TravelStages";
-import GroupTravel from "@/components/GroupTravel";
 import Exploration from "@/components/Exploration";
+import GroupTravel from "@/components/GroupTravel";
 import { Button } from "@/components/ui/button";
+import { Heart } from "lucide-react";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <TravelStages />
       <GroupTravel />
       <Exploration />
-      
+
       {/* Call to Action Section */}
       <section className="py-24 px-6 bg-gradient-to-br from-primary via-[hsl(28,80%,65%)] to-secondary">
         <div className="max-w-4xl mx-auto text-center">
@@ -35,7 +36,7 @@ export default function Home() {
       <footer className="py-8 px-6 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-muted-foreground">
-            <div className="font-display text-card-foreground text-lg mb-1">TraWell</div>
+            <div className="font-handwriting text-card-foreground text-lg mb-1">TraWell</div>
             <div className="flex items-center justify-center gap-2">
               <span>built with</span>
               <span className="text-red-500 text-2xl">♥</span>
