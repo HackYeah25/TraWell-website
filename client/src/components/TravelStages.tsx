@@ -27,7 +27,7 @@ export default function TravelStages() {
     <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-display text-5xl md:text-6xl text-center text-orange-500 mb-20">
-          How Trawell Helps
+          When TraWell can help?
         </h2>
 
         <div className="relative">
