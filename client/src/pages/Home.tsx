@@ -36,7 +36,7 @@ export default function Home() {
       <footer className="py-8 px-6 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-muted-foreground">
-            <div className="font-handwriting text-card-foreground text-lg mb-1">TraWell</div>
+            <div className="font-display text-card-foreground text-lg mb-1">TraWell</div>
             <div className="flex items-center justify-center gap-2">
               <span>built with</span>
               <span className="text-red-500 text-2xl">♥</span>
