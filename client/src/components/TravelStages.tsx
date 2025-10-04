@@ -1,24 +1,28 @@
+
 import { Card } from "@/components/ui/card";
-import { Lightbulb, MapPin, Pizza } from "lucide-react";
+import { Lightbulb, MapPin, Pizza, Frown, MessageCircle } from "lucide-react";
 
 const stages = [
   {
     number: "1",
     title: "Brainstorm",
     icon: Lightbulb,
-    description: "When you know you wanna go somewhere... but you don't know where. Thailand in the winter? Surfing in Portugal? Weekend in Sobótka?",
+    problem: "When you know you wanna go somewhere... but you don't know where. Thailand in the winter? Surfing in Portugal? Weekend in Sobótka?",
+    solution: "TraWell analyzes your preferences, budget, and timing to suggest perfect destinations tailored just for you."
   },
   {
-    number: "2",
+    number: "2", 
     title: "Planning",
     icon: MapPin,
-    description: "When you know you wanna go see Lake Garda but you want to dig deeper and find what you can do there.",
+    problem: "When you know you wanna go see Lake Garda but you want to dig deeper and find what you can do there.",
+    solution: "TraWell creates detailed itineraries with hidden gems, local experiences, and perfectly timed activities."
   },
   {
     number: "3",
-    title: "On-trip support",
+    title: "On-trip support", 
     icon: Pizza,
-    description: "Where you're already there and you're wondering where is the best pizza nearby.",
+    problem: "Where you're already there and you're wondering where is the best pizza nearby.",
+    solution: "TraWell provides real-time recommendations based on your exact location and current preferences."
   },
 ];
 
@@ -49,13 +53,31 @@ export default function TravelStages() {
                     </div>
                   </div>
 
-                  <h3 className="hidden md:block font-display text-3xl text-center text-black mb-4">
+                  <h3 className="hidden md:block font-display text-3xl text-center text-black mb-6">
                     {stage.title}
                   </h3>
 
-                  <p className="text-lg text-muted-foreground text-center leading-relaxed">
-                    {stage.description}
-                  </p>
+                  {/* Problem Section */}
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Frown className="w-5 h-5 text-orange-500" />
+                      <span className="text-sm font-semibold text-orange-500 uppercase tracking-wide">Problem</span>
+                    </div>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      {stage.problem}
+                    </p>
+                  </div>
+
+                  {/* Solution Section */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <MessageCircle className="w-5 h-5 text-primary" />
+                      <span className="text-sm font-semibold text-primary uppercase tracking-wide">Solution</span>
+                    </div>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      {stage.solution}
+                    </p>
+                  </div>
                 </Card>
               </div>
             ))}
