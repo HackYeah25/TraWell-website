@@ -43,10 +43,10 @@ export default function Exploration() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-6xl text-card-foreground mb-6">
-            Explore the unknown
+            Discover through community
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Or visit cool spots already visited and high-rated by fellow Trawellers from all over the world
+            Benefit from the community's experiences. Based on what you liked, we'll recommend destinations and spots that other users loved
           </p>
         </div>
         
