@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import TravelStages from "@/components/TravelStages";
 import GroupTravel from "@/components/GroupTravel";
 import Exploration from "@/components/Exploration";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
