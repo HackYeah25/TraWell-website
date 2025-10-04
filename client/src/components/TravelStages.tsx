@@ -5,7 +5,7 @@ import { User, Lightbulb, MapPin, Headphones } from "lucide-react";
 const stages = [
   {
     number: "1",
-    title: "Profile Creation",
+    title: "Traweller Profile",
     icon: User,
     description: "TraWell creates your traveller profile to provide customised recommendations.",
     screenshot: "profile-creation.jpg"
@@ -14,21 +14,21 @@ const stages = [
     number: "2", 
     title: "Destination Brainstorming",
     icon: Lightbulb,
-    description: "We can brainstorm trip destinations.. Thailand in January? Oslo city-break next weekend?",
+    description: "We'll help you find potential trip destinations and discover locations that you didn't even know existed.",
     screenshot: "destination-brainstorming.jpg"
   },
   {
     number: "3",
-    title: "Activity Planning", 
+    title: "Trip Planning", 
     icon: MapPin,
-    description: "Once destination is chosen - let's make a list of cool things to see/do there",
+    description: "Once you pick the destinations we'll help you build the list of cool stuff to see or do there.",
     screenshot: "activity-planning.jpg"
   },
   {
     number: "4",
-    title: "Real-time Support", 
+    title: "Real-time Guide", 
     icon: Headphones,
-    description: "On-trip real-time support.",
+    description: "When you actually go there, we will help you navigate around, find those cool spots, restaurants, etc.",
     screenshot: "real-time-support.jpg"
   },
 ];
@@ -65,7 +65,7 @@ export default function TravelStages() {
                           <span className="text-2xl font-bold text-primary">
                             {stage.number}
                           </span>
-                          <h3 className="font-display text-3xl text-black">
+                          <h3 className="text-3xl text-black font-normal">
                             {stage.title}
                           </h3>
                         </div>
