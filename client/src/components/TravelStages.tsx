@@ -37,7 +37,7 @@ export default function TravelStages() {
   return (
     <section className="py-24 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-5xl md:text-6xl text-center text-orange-500 mb-20">
+        <h2 className="text-5xl md:text-6xl text-center text-orange-500 mb-20 font-display">
           How it works?
         </h2>
 
@@ -65,7 +65,7 @@ export default function TravelStages() {
                           <span className="text-2xl font-bold text-primary">
                             {stage.number}
                           </span>
-                          <h3 className="text-3xl text-black font-normal">
+                          <h3 className="text-3xl text-black font-normal font-display">
                             {stage.title}
                           </h3>
                         </div>
