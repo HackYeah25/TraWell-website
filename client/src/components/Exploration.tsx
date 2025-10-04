@@ -9,6 +9,7 @@ const destinations = [
     rating: 4.9,
     reviews: 127,
     type: "Hidden Gem",
+    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop",
   },
   {
     name: "Mountain Trail Vista",
@@ -16,6 +17,7 @@ const destinations = [
     rating: 4.8,
     reviews: 203,
     type: "Popular",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
   },
   {
     name: "Local Food Market",
@@ -23,6 +25,7 @@ const destinations = [
     rating: 4.7,
     reviews: 89,
     type: "Hidden Gem",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
   },
   {
     name: "Sunset Viewpoint",
@@ -30,6 +33,7 @@ const destinations = [
     rating: 5.0,
     reviews: 412,
     type: "Popular",
+    image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=400&h=300&fit=crop",
   },
 ];
 
@@ -53,8 +57,18 @@ export default function Exploration() {
               className="overflow-hidden hover-elevate transition-all duration-300 cursor-pointer"
               data-testid={`card-destination-${index}`}
             >
-              <div className="h-48 bg-gradient-to-br from-primary/20 via-accent/30 to-secondary/20 flex items-center justify-center">
-                <MapPinIcon className="w-16 h-16 text-primary/40" />
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={destination.image} 
+                  alt={destination.name}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  onError={(e) => {
+                    // Fallback to gradient if image fails to load
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.parentElement!.style.background = 'linear-gradient(135deg, hsl(var(--primary) / 0.2), hsl(var(--accent) / 0.3), hsl(var(--secondary) / 0.2))';
+                    e.currentTarget.parentElement!.innerHTML = '<div class="flex items-center justify-center h-full"><svg class="w-16 h-16 text-primary/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div>';
+                  }}
+                />
               </div>
               
               <div className="p-5">
