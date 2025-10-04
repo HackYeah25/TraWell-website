@@ -34,12 +34,14 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-6 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-muted-foreground flex items-center justify-center gap-2">
-            <span className="font-display text-card-foreground text-lg">TraWell</span>
-            <span>built with</span>
-            <span className="text-red-500 text-2xl">♥</span>
-            <span>during HackYeah.pl</span>
-          </p>
+          <div className="text-muted-foreground">
+            <div className="font-display text-card-foreground text-lg mb-1">TraWell</div>
+            <div className="flex items-center justify-center gap-2">
+              <span>built with</span>
+              <span className="text-red-500 text-2xl">♥</span>
+              <span>during HackYeah.pl</span>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
