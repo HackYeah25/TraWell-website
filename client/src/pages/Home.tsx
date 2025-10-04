@@ -35,10 +35,10 @@ export default function Home() {
       <footer className="py-8 px-6 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            <span className="font-semibold text-card-foreground">TraWell</span>
+            <span className="font-display text-card-foreground text-lg">TraWell</span>
             <span>built with</span>
-            <span className="text-red-500">♥</span>
-            <span>at HackYeah.pl</span>
+            <span className="text-red-500 text-2xl">♥</span>
+            <span>during HackYeah.pl</span>
           </p>
         </div>
       </footer>
