@@ -3,7 +3,7 @@ import { Plane, Download } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-[hsl(28,80%,65%)] to-primary opacity-95" />
       
       <div className="relative z-10 max-w-5xl mx-auto px-6 py-12 text-center">
