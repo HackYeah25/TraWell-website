@@ -14,9 +14,6 @@ export default function Hero() {
                 <Plane className="w-12 h-12 text-white" />
               </div>
             </div>
-            <div className="absolute -top-2 -right-2 w-8 h-8">
-              <Plane className="w-6 h-6 text-white animate-orbit" />
-            </div>
           </div>
         </div>
         
@@ -67,21 +64,8 @@ export default function Hero() {
           }
         }
         
-        @keyframes orbit {
-          from {
-            transform: rotate(0deg) translateX(50px) rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg) translateX(50px) rotate(-360deg);
-          }
-        }
-        
         .animate-spin-slow {
           animation: spin-slow 20s linear infinite;
-        }
-        
-        .animate-orbit {
-          animation: orbit 8s linear infinite;
         }
       `}</style>
     </section>
