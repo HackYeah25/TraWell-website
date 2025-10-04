@@ -42,10 +42,10 @@ export default function Exploration() {
     <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-display text-5xl md:text-6xl text-black/80 mb-6">
+          <h2 className="font-display text-5xl md:text-6xl text-card-foreground mb-6">
             Explore the unknown
           </h2>
-          <p className="text-xl text-black/60 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Or visit cool spots already visited and high-rated by fellow Trawellers from all over the world
           </p>
         </div>
