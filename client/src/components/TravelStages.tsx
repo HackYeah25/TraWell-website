@@ -36,19 +36,8 @@ export default function TravelStages() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
             {stages.map((stage, index) => (
               <div key={stage.number} className="relative">
-                <div className="hidden md:flex absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-primary items-center justify-center z-10">
-                  <span className="text-2xl font-bold text-primary-foreground">
-                    {stage.number}
-                  </span>
-                </div>
-
                 <Card className="p-8 h-full hover-elevate transition-all duration-300" data-testid={`card-stage-${index + 1}`}>
-                  <div className="flex items-center gap-4 mb-6 md:hidden">
-                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl font-bold text-primary-foreground">
-                        {stage.number}
-                      </span>
-                    </div>
+                  <div className="mb-6 md:hidden">
                     <h3 className="font-display text-3xl text-black">
                       {stage.title}
                     </h3>
