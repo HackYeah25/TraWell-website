@@ -8,7 +8,7 @@ export default function GroupTravel() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-5xl md:text-6xl text-black/80 mb-6 font-semibold">
+            <h2 className="text-5xl md:text-6xl text-black/80 mb-6 font-semibold font-display">
               Travelling in a group?
             </h2>
             <p className="text-xl text-black/80 mb-8 leading-relaxed">
