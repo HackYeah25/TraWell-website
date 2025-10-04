@@ -8,11 +8,11 @@ export default function GroupTravel() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-display text-5xl md:text-6xl text-card-foreground mb-6">
+            <h2 className="text-5xl md:text-6xl text-black/80 mb-6 font-semibold">
               Travelling in a group?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Great! Brainstorm, share your thoughts and let Trawell find best spots for everyone.
+              Great! Invite your friends, chat here (like you would on whatsapp group chat) and TraWell will serve recommendations considering your chats content and individual traveller profiles.
             </p>
             
             <Card className="p-6" data-testid="card-group-features">
