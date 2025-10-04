@@ -36,7 +36,7 @@ export default function GroupTravel() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg text-card-foreground mb-1">
-                    Smart Suggestions
+                    Considerate Suggestions
                   </h3>
                   <p className="text-muted-foreground">
                     AI-powered recommendations that suit your group's vibe.
