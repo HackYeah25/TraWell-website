@@ -26,13 +26,13 @@ export default function TravelStages() {
   return (
     <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-display text-5xl md:text-6xl text-center text-card-foreground mb-20">
+        <h2 className="font-display text-5xl md:text-6xl text-center text-orange-500 mb-20">
           How Trawell Helps
         </h2>
-        
+
         <div className="relative">
           <div className="hidden md:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-secondary via-primary to-secondary" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
             {stages.map((stage, index) => (
               <div key={stage.number} className="relative">
@@ -41,7 +41,7 @@ export default function TravelStages() {
                     {stage.number}
                   </span>
                 </div>
-                
+
                 <Card className="p-8 h-full hover-elevate transition-all duration-300" data-testid={`card-stage-${index + 1}`}>
                   <div className="flex items-center gap-4 mb-6 md:hidden">
                     <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
@@ -49,21 +49,21 @@ export default function TravelStages() {
                         {stage.number}
                       </span>
                     </div>
-                    <h3 className="font-display text-3xl text-card-foreground">
+                    <h3 className="font-display text-3xl text-black">
                       {stage.title}
                     </h3>
                   </div>
-                  
+
                   <div className="mb-6 flex justify-center">
                     <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center">
                       <stage.icon className="w-8 h-8 text-accent-foreground" />
                     </div>
                   </div>
-                  
-                  <h3 className="hidden md:block font-display text-3xl text-center text-card-foreground mb-4">
+
+                  <h3 className="hidden md:block font-display text-3xl text-center text-black mb-4">
                     {stage.title}
                   </h3>
-                  
+
                   <p className="text-lg text-muted-foreground text-center leading-relaxed">
                     {stage.description}
                   </p>
