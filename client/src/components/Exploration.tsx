@@ -35,7 +35,7 @@ const destinations = [
 
 export default function Exploration() {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-primary/5 to-white">
+    <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-6xl text-card-foreground mb-6">
