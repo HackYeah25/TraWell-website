@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-[hsl(28,80%,65%)] to-primary opacity-95" />
       
-      <div className="relative z-10 max-w-5xl mx-auto px-6 py-20 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 py-12 text-center">
         <div className="mb-12 flex justify-center">
           <div className="relative w-32 h-32">
             <div className="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center animate-spin-slow">
