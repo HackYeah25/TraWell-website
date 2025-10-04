@@ -25,13 +25,9 @@ export default function Hero() {
           Travel Well
         </p>
         
-        <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
+        <p className="text-xl md:text-2xl text-white/90 mb-12 font-light">
           with context-aware AI companion
         </p>
-        
-        <div className="flex items-center justify-center gap-2 text-white/90 mb-12">
-          <span className="text-lg">Plan, Discover, Explore</span>
-        </div>
         
         <div className="flex justify-center">
           <Button 
