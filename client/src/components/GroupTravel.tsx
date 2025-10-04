@@ -11,7 +11,7 @@ export default function GroupTravel() {
             <h2 className="text-5xl md:text-6xl text-black/80 mb-6 font-semibold">
               Travelling in a group?
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-black/80 mb-8 leading-relaxed">
               Great! Invite your friends, chat here (like you would on whatsapp group chat) and TraWell will serve recommendations considering your chats content and individual traveller profiles.
             </p>
             
