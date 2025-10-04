@@ -25,7 +25,7 @@ const destinations = [
     rating: 4.7,
     reviews: 89,
     type: "Hidden Gem",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop",
   },
   {
     name: "Sunset Viewpoint",
