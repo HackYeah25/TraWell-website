@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Plane, Download } from "lucide-react";
+import { Plane } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[64vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-[hsl(28,80%,65%)] to-primary opacity-95" />
       
       <div className="relative z-10 max-w-5xl mx-auto px-6 py-12 text-center">
@@ -33,7 +33,7 @@ export default function Hero() {
           <span className="text-lg">Plan, Discover, Explore</span>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center">
           <Button 
             size="lg"
             variant="secondary"
@@ -41,15 +41,6 @@ export default function Hero() {
             data-testid="button-start-planning"
           >
             Start Planning
-          </Button>
-          <Button 
-            size="lg"
-            variant="outline"
-            className="px-10 py-6 text-lg font-medium bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20"
-            data-testid="button-install-app"
-          >
-            <Download className="w-5 h-5 mr-2" />
-            Install App
           </Button>
         </div>
       </div>
