@@ -14,55 +14,55 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  --background: 350 85% 92%;
+  --background: 40 50% 97%;
 
-  --foreground: 0 0% 15%;
+  --foreground: 25 30% 15%;
 
-  --border: 350 55% 78%;
+  --border: 40 25% 88%;
 
-  --card: 0 0% 100%;
+  --card: 40 100% 99%;
 
-  --card-foreground: 0 0% 15%;
+  --card-foreground: 25 30% 15%;
 
-  --card-border: 350 35% 88%;
+  --card-border: 40 25% 88%;
 
-  --sidebar: 350 75% 88%;
+  --sidebar: 40 30% 92%;
 
-  --sidebar-foreground: 0 0% 15%;
+  --sidebar-foreground: 25 30% 15%;
 
-  --sidebar-border: 350 55% 75%;
+  --sidebar-border: 40 25% 88%;
 
-  --sidebar-primary: 350 95% 65%;
+  --sidebar-primary: 16 90% 58%;
 
   --sidebar-primary-foreground: 0 0% 100%;
 
-  --sidebar-accent: 350 65% 82%;
+  --sidebar-accent: 40 30% 92%;
 
-  --sidebar-accent-foreground: 0 0% 15%;
+  --sidebar-accent-foreground: 25 30% 15%;
 
-  --sidebar-ring: 350 95% 65%;
+  --sidebar-ring: 16 90% 58%;
 
-  --popover: 0 0% 100%;
+  --popover: 40 100% 99%;
 
-  --popover-foreground: 0 0% 15%;
+  --popover-foreground: 25 30% 15%;
 
-  --popover-border: 350 35% 88%;
+  --popover-border: 40 25% 88%;
 
-  --primary: 350 95% 65%;
+  --primary: 16 90% 58%;
 
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 350 45% 92%;
+  --secondary: 40 35% 88%;
 
-  --secondary-foreground: 0 0% 15%;
+  --secondary-foreground: 25 30% 15%;
 
-  --muted: 350 25% 96%;
+  --muted: 40 30% 92%;
 
-  --muted-foreground: 0 0% 45%;
+  --muted-foreground: 25 15% 45%;
 
-  --accent: 350 55% 87%;
+  --accent: 180 65% 55%;
 
-  --accent-foreground: 0 0% 15%;
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 75% 55%;
 
@@ -76,10 +76,10 @@
   --chart-4: 210 60% 50%;
   --chart-5: 280 55% 50%;
 
-  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-sans: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
-  --font-display: Pacifico, cursive;
+  --font-display: 'Pacifico', cursive;
   --radius: .5rem; /* 8px */
   --shadow-2xs: 0px 1px 2px 0px hsl(210 15% 20% / 0.04);
   --shadow-xs: 0px 1px 2px 0px hsl(210 15% 20% / 0.05);
@@ -91,6 +91,12 @@
   --shadow-2xl: 0px 25px 50px -12px hsl(210 15% 20% / 0.12);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
+
+  /* Custom gradients for TraWell */
+  --gradient-sunset: linear-gradient(135deg, hsl(16, 90%, 58%) 0%, hsl(340, 82%, 52%) 100%);
+  --gradient-ocean: linear-gradient(135deg, hsl(180, 65%, 55%) 0%, hsl(200, 80%, 60%) 100%);
+  --gradient-warm: linear-gradient(135deg, hsl(35, 100%, 65%) 0%, hsl(16, 90%, 58%) 100%);
+  --gradient-sky: linear-gradient(180deg, hsl(40, 100%, 97%) 0%, hsl(180, 65%, 95%) 100%);
 
   /* Automatically computed borders - intensity can be controlled by the user by the --opaque-button-border-intensity setting */
 
@@ -315,5 +321,127 @@
   .border.active-elevate-2:not(.no-active-interaction-elevate)::after,
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
+  }
+
+  /* TraWell custom utility classes */
+  .bg-gradient-sunset {
+    background: var(--gradient-sunset);
+  }
+
+  .bg-gradient-ocean {
+    background: var(--gradient-ocean);
+  }
+
+  .bg-gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  .bg-gradient-sky {
+    background: var(--gradient-sky);
+  }
+
+  .text-warm-coral {
+    color: hsl(16, 90%, 58%);
+  }
+
+  .text-warm-turquoise {
+    color: hsl(180, 65%, 55%);
+  }
+
+  .text-warm-sand {
+    color: hsl(40, 35%, 88%);
+  }
+
+  .bg-warm-coral {
+    background-color: hsl(16, 90%, 58%);
+  }
+
+  .bg-warm-turquoise {
+    background-color: hsl(180, 65%, 55%);
+  }
+
+  .bg-warm-sand {
+    background-color: hsl(40, 35%, 88%);
+  }
+
+  .border-warm-coral {
+    border-color: hsl(16, 90%, 58%);
+  }
+
+  .border-warm-turquoise {
+    border-color: hsl(180, 65%, 55%);
+  }
+
+  .border-warm-sand {
+    border-color: hsl(40, 35%, 88%);
+  }
+
+  .hover\:bg-warm-coral\/10:hover {
+    background-color: hsl(16, 90%, 58%, 0.1);
+  }
+
+  .hover\:bg-warm-turquoise\/10:hover {
+    background-color: hsl(180, 65%, 55%, 0.1);
+  }
+
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+
+  .transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-transform {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transform-gpu {
+    transform: translateZ(0);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .animate-slideInLeft {
+    animation: slideInLeft 0.3s ease-out;
+  }
+
+  .animate-slideInRight {
+    animation: slideInRight 0.3s ease-out;
   }
 }

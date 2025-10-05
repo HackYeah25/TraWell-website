@@ -14,18 +14,17 @@ export default function Home() {
       <Exploration />
 
       {/* Call to Action Section */}
-      <section className="py-24 px-6 bg-gradient-to-br from-primary via-[hsl(28,80%,65%)] to-secondary">
+      <section className="py-24 px-6 bg-gradient-warm">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-display text-4xl md:text-5xl text-white mb-6">
+          <h2 className="font-display text-4xl md:text-5xl text-white mb-6 animate-fadeIn">
             Ready to start your journey?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto animate-slideInLeft">
             Join thousands of travelers who've discovered amazing places with TraWell's AI-powered recommendations.
           </p>
           <Button 
             size="lg"
-            variant="secondary"
-            className="px-12 py-6 text-lg font-medium"
+            className="px-12 py-6 text-lg font-medium bg-white text-warm-coral hover:bg-white/90 border-0 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform-gpu animate-slideInRight"
           >
             Start Planning
           </Button>
@@ -33,13 +32,13 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-white border-t border-gray-100">
+      <footer className="py-8 px-6 bg-warm-sand/20 border-t border-warm-sand">
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-muted-foreground">
-            <div className="font-display text-card-foreground text-lg mb-1">TraWell</div>
+            <div className="font-display text-warm-coral text-lg mb-1">TraWell</div>
             <div className="flex items-center justify-center gap-2">
               <span>built with</span>
-              <span className="text-red-500 text-2xl">♥</span>
+              <span className="text-warm-coral text-2xl">♥</span>
               <span>during HackYeah.pl</span>
             </div>
           </div>
