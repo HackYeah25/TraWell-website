@@ -21,7 +21,7 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-white/3 rounded-full animate-float stagger-3"></div>
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-white mb-4 sm:mb-6 lg:mb-8 animate-fadeIn">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-white mb-4 sm:mb-6 lg:mb-8 animate-fadeIn px-4">
             <span className="text-gradient-sunset">Ready to start your journey?</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-8 sm:mb-10 lg:mb-12 max-w-xl sm:max-w-2xl mx-auto animate-slideInLeft px-4">
