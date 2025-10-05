@@ -28,8 +28,8 @@ export default function Hero() {
           </div>
         </div>
         
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white mb-6 sm:mb-8 lg:mb-10 animate-fadeIn leading-tight">
-          <span className="text-gradient-sunset inline-block">TraWell</span>
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white mb-6 sm:mb-8 lg:mb-10 animate-fadeIn leading-tight px-4">
+          <span className="text-gradient-sunset">TraWell</span>
         </h1>
         
         <div className="mb-10 sm:mb-14 lg:mb-18 animate-slideInRight max-w-xl sm:max-w-2xl mx-auto px-4">
