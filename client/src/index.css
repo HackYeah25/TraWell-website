@@ -561,8 +561,9 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     display: inline-block;
-    padding: 0.1em 0.2em 0.1em 0.1em;
-    margin: -0.1em -0.2em -0.1em -0.1em;
+    padding: 0.15em 0.25em 0.2em 0.15em;
+    margin: -0.15em -0.25em -0.2em -0.15em;
+    line-height: 1.1;
   }
 
   .text-gradient-ocean {
@@ -570,6 +571,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
+    padding: 0.15em 0.25em 0.2em 0.15em;
+    margin: -0.15em -0.25em -0.2em -0.15em;
+    line-height: 1.1;
   }
 
   /* Interactive button effects */
