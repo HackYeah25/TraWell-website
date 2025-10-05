@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex justify-center px-4">
             <Button 
               size="lg"
-              className="btn-modern w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-6 text-base sm:text-lg font-semibold bg-white text-warm-coral hover:bg-white/95 border-0 rounded-xl shadow-modern-lg hover:shadow-modern-lg transition-all duration-300 hover:scale-105 transform-gpu animate-slideInRight ring-2 sm:ring-4 ring-white/30 hover:ring-white/50 animate-pulseGlow"
+              className="btn-subtle w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-6 text-base sm:text-lg font-semibold rounded-xl animate-slideInRight"
             >
               Start Planning
             </Button>
