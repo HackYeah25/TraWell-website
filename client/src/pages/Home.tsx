@@ -45,7 +45,7 @@ export default function Home() {
             <div className="font-display text-gradient-sunset text-lg sm:text-xl mb-1 sm:mb-2 animate-fadeIn">TraWell</div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-sm sm:text-base animate-slideInLeft">
               <span>built with</span>
-              <span className="text-warm-coral text-xl sm:text-2xl animate-pulseGlow">♥</span>
+              <span className="text-warm-coral text-xl sm:text-2xl" style={{background: 'none', backgroundColor: 'transparent', boxShadow: 'none', border: 'none'}}>♥</span>
               <span>during HackYeah.pl</span>
             </div>
           </div>

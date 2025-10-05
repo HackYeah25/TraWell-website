@@ -28,15 +28,11 @@ export default function Hero() {
           </div>
         </div>
         
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white mb-4 sm:mb-6 lg:mb-8 animate-fadeIn leading-tight">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white mb-6 sm:mb-8 lg:mb-10 animate-fadeIn leading-tight">
           <span className="text-gradient-sunset">TraWell</span>
         </h1>
         
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/95 mb-2 sm:mb-3 lg:mb-4 font-light animate-slideInLeft">
-          Travel Well
-        </p>
-        
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-12 lg:mb-16 font-light animate-slideInRight max-w-xl sm:max-w-2xl mx-auto px-4">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 mb-10 sm:mb-14 lg:mb-18 font-medium animate-slideInRight max-w-xl sm:max-w-2xl mx-auto px-4">
           with context-aware AI companion
         </p>
         
