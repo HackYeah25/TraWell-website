@@ -32,9 +32,14 @@ export default function Hero() {
           <span className="text-gradient-sunset">TraWell</span>
         </h1>
         
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 mb-10 sm:mb-14 lg:mb-18 font-medium animate-slideInRight max-w-xl sm:max-w-2xl mx-auto px-4">
-          with context-aware AI companion
-        </p>
+        <div className="mb-10 sm:mb-14 lg:mb-18 animate-slideInRight max-w-xl sm:max-w-2xl mx-auto px-4">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 font-medium mb-2">
+            Travel Well
+          </p>
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/70 font-medium">
+            with context-aware AI companion
+          </p>
+        </div>
         
         <div className="flex justify-center px-4">
           <Button 
