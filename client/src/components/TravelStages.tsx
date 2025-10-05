@@ -35,9 +35,9 @@ const stages = [
 
 export default function TravelStages() {
   return (
-    <section className="py-24 px-6 bg-gradient-sky">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-5xl md:text-6xl text-center text-warm-coral mb-20 font-display animate-fadeIn">
+    <section className="py-32 px-8 bg-gradient-sky">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-5xl md:text-6xl text-center text-warm-coral mb-24 font-display animate-fadeIn">
           How it works?
         </h2>
 
@@ -45,7 +45,7 @@ export default function TravelStages() {
           {/* Vertical timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-warm-sand via-warm-coral to-warm-turquoise hidden md:block" />
 
-          <div className="space-y-12">
+          <div className="space-y-16">
             {stages.map((stage, index) => (
               <div key={stage.number} className="relative flex items-start gap-8">
                 {/* Timeline dot */}
@@ -57,12 +57,12 @@ export default function TravelStages() {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 pb-8">
-                  <Card className="p-8 hover-elevate transition-all duration-300 bg-card border-warm-sand shadow-lg hover:shadow-xl" data-testid={`card-stage-${index + 1}`}>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="flex-1 pb-12">
+                  <Card className="p-10 hover-elevate transition-all duration-300 bg-card border-warm-sand shadow-lg hover:shadow-xl" data-testid={`card-stage-${index + 1}`}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                       <div>
-                        <div className="flex items-center gap-3 mb-4">
-                          <span className="text-2xl font-bold text-warm-coral">
+                        <div className="flex items-center gap-4 mb-6">
+                          <span className="text-3xl font-bold text-warm-coral">
                             {stage.number}
                           </span>
                           <h3 className="text-3xl text-card-foreground font-semibold font-sans">

@@ -39,10 +39,10 @@ const destinations = [
 
 export default function Exploration() {
   return (
-    <section className="py-24 px-6 bg-gradient-sky">
+    <section className="py-32 px-8 bg-gradient-sky">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-5xl md:text-6xl text-warm-coral mb-6 animate-fadeIn">
+        <div className="text-center mb-20">
+          <h2 className="font-display text-5xl md:text-6xl text-warm-coral mb-8 animate-fadeIn">
             Discover through community
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slideInLeft">
@@ -50,14 +50,14 @@ export default function Exploration() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {destinations.map((destination, index) => (
             <Card 
               key={destination.name} 
               className="overflow-hidden hover-elevate transition-all duration-300 cursor-pointer bg-card border-warm-sand shadow-lg hover:shadow-xl hover:scale-105 transform-gpu"
               data-testid={`card-destination-${index}`}
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-52 overflow-hidden">
                 <img 
                   src={destination.image} 
                   alt={destination.name}
@@ -71,8 +71,8 @@ export default function Exploration() {
                 />
               </div>
               
-              <div className="p-5">
-                <div className="flex items-start justify-between gap-2 mb-3">
+              <div className="p-6">
+                <div className="flex items-start justify-between gap-3 mb-4">
                   <h3 className="font-semibold text-lg text-card-foreground leading-tight">
                     {destination.name}
                   </h3>
@@ -89,12 +89,12 @@ export default function Exploration() {
                   </Badge>
                 </div>
                 
-                <p className="text-sm text-muted-foreground mb-4 flex items-center gap-1">
+                <p className="text-sm text-muted-foreground mb-5 flex items-center gap-2">
                   <MapPinIcon className="w-4 h-4 text-warm-turquoise" />
                   {destination.location}
                 </p>
                 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3">
                   <div className="flex items-center gap-1">
                     <Star className="w-4 h-4 fill-warm-coral text-warm-coral" />
                     <span className="font-semibold text-card-foreground" data-testid={`rating-${index}`}>
