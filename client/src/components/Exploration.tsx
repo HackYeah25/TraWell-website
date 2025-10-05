@@ -39,11 +39,15 @@ const destinations = [
 
 export default function Exploration() {
   return (
-    <section className="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-sky">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-sky relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-16 right-16 w-28 h-28 bg-warm-turquoise/10 rounded-full animate-float"></div>
+      <div className="absolute bottom-16 left-16 w-20 h-20 bg-warm-coral/10 rounded-full animate-float stagger-2"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-warm-coral mb-4 sm:mb-6 lg:mb-8 animate-fadeIn">
-            Discover through community
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6 lg:mb-8 animate-fadeIn">
+            <span className="text-gradient-sunset">Discover through community</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto leading-relaxed animate-slideInLeft px-4">
             Benefit from the community's experiences. Based on what you liked, we'll recommend destinations and spots that other users loved
@@ -54,14 +58,14 @@ export default function Exploration() {
           {destinations.map((destination, index) => (
             <Card 
               key={destination.name} 
-              className="overflow-hidden hover-elevate transition-all duration-300 cursor-pointer bg-card border-warm-sand shadow-lg hover:shadow-xl hover:scale-105 transform-gpu"
+              className={`card-hover overflow-hidden transition-all duration-300 cursor-pointer bg-gradient-card border-warm-sand shadow-modern hover:shadow-modern-lg hover:scale-105 transform-gpu animate-fadeIn stagger-${index + 1}`}
               data-testid={`card-destination-${index}`}
             >
-              <div className="h-40 sm:h-48 lg:h-52 overflow-hidden">
+              <div className="h-40 sm:h-48 lg:h-52 overflow-hidden relative">
                 <img 
                   src={destination.image} 
                   alt={destination.name}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   onError={(e) => {
                     // Fallback to gradient if image fails to load
                     e.currentTarget.style.display = 'none';
@@ -69,6 +73,8 @@ export default function Exploration() {
                     e.currentTarget.parentElement!.innerHTML = '<div class="flex items-center justify-center h-full"><svg class="w-12 h-12 sm:w-16 sm:h-16 text-warm-coral/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div>';
                   }}
                 />
+                {/* Overlay gradient on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               
               <div className="p-4 sm:p-5 lg:p-6">
@@ -78,10 +84,10 @@ export default function Exploration() {
                   </h3>
                   <Badge 
                     variant={destination.type === "Hidden Gem" ? "default" : "secondary"}
-                    className={`flex-shrink-0 text-xs sm:text-sm ${
+                    className={`flex-shrink-0 text-xs sm:text-sm hover-scale ${
                       destination.type === "Hidden Gem" 
-                        ? "bg-warm-turquoise text-white" 
-                        : "bg-warm-sand text-card-foreground"
+                        ? "bg-gradient-ocean-enhanced text-white" 
+                        : "bg-gradient-card text-card-foreground"
                     }`}
                     data-testid={`badge-type-${index}`}
                   >
@@ -90,7 +96,7 @@ export default function Exploration() {
                 </div>
                 
                 <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 lg:mb-5 flex items-center gap-1 sm:gap-2">
-                  <MapPinIcon className="w-3 h-3 sm:w-4 sm:h-4 text-warm-turquoise flex-shrink-0" />
+                  <MapPinIcon className="w-3 h-3 sm:w-4 sm:h-4 text-gradient-ocean flex-shrink-0" />
                   <span className="truncate">{destination.location}</span>
                 </p>
                 
